@@ -4,11 +4,11 @@ import bcrypt from "bcrypt-nodejs";
 import cors from "cors";
 import knex from "knex";
 import e from "express";
-import handleRegister from "./controllers/register";
-import handleSignin from "./controllers/signin";
-import handleId from "./controllers/id";
-import imageHandler from "./controllers/image";
-import handleClarifai from "./controllers/clarifai";
+import handleRegister from "./controllers/register.js";
+import handleSignin from "./controllers/signin.js";
+import handleId from "./controllers/id.js";
+import imageHandler from "./controllers/image.js";
+import handleClarifai from "./controllers/clarifai.js";
 
 console.log("DATABASE_URL:", process.env.DATABASE_URL);
 
