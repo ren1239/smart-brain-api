@@ -17,5 +17,4 @@ const handleId = (req, res, db) => {
       }
     });
 };
-
-module.exports = { handleId };
+export default handleId;

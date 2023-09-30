@@ -1,3 +1,4 @@
+import fetch from "node-fetch";
 // controllers/clarifai.js
 
 const handleClarifai = async (req, res) => {
@@ -59,6 +60,4 @@ const handleClarifai = async (req, res) => {
   }
 };
 
-module.exports = {
-  handleClarifai: handleClarifai,
-};
+export default handleClarifai;
