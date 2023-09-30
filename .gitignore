@@ -1,0 +1,12 @@
+# Ignore files with a .log extension
+*.log
+
+# Ignore directories named "node_modules"
+node_modules/
+
+# Ignore a specific file named "config.json"
+config.json
+
+# Ignore all files in a directory and its subdirectories
+# Note the use of the slash at the beginning to indicate the root directory
+/uploads/
