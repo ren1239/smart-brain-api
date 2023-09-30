@@ -10,6 +10,8 @@ const id = require("./controllers/id");
 const image = require("./controllers/image");
 const clarifai = require("./controllers/clarifai");
 
+console.log("DATABASE_URL:", process.env.DATABASE_URL);
+
 const db = knex({
   client: "pg",
   connection: {
