@@ -41,6 +41,7 @@ app.post("/signin", (req, res) => {
 
 app.post("/register", (req, res) => {
   register.handleRegister(req, res, db, bcrypt);
+  console.log("DATABASE_URL:", process.env.DATABASE_URL);
 });
 
 app.get("/profile/:id", (req, res) => {
