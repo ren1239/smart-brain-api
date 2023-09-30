@@ -20,7 +20,7 @@ const db = knex({
     host: process.env.DATABASE_HOST,
     port: 5432,
     user: process.env.DATABASE_USER,
-    password: process.env.DATABASE_PASSWORD,
+    password: process.env.DATABASE_PW,
     database: process.env.DATABASE_DB,
   },
 });
@@ -64,8 +64,8 @@ app.post("/clarifai", (req, res) => {
 
 // Third you need to tell the app to listen to a port ie. 3000 - you can log a message
 
-app.listen(3000, () => {
-  console.log("Server is running on post 3000");
+app.listen(process.env.PORT || 3000, () => {
+  console.log(`Server is running on post ${process.env.PORT}`);
 });
 
 /*
