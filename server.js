@@ -35,8 +35,11 @@ const app = express();
 app.use(json());
 
 // Run the middleware to enable cors
-app.use(cors());
-
+app.use(
+  cors({
+    origin: "https://brain-hssg.onrender.com",
+  })
+);
 // Fourth you need to create a route - you can use a get request
 app.get("/", (req, res) => {
   res.send("success");
